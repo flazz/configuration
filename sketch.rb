@@ -12,15 +12,15 @@ end
 class Cassandra
   include Configuration
 
-  configure :keyspace
+  attr_accessor :keyspace
 
-  configure :servers
-  configure :user
-  configure :password
+  attr_accessor :servers
+  attr_accessor :user
+  attr_accessor :password
 
-  configure :connect_timeout
-  configure :timeout
-  configure :retries
+  attr_accessor :connect_timeout
+  attr_accessor :timeout
+  attr_accessor :retries
 end
 
 # specify configurations
